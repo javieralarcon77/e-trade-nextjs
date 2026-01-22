@@ -1,6 +1,6 @@
 import "./calification.css";
 
-export function Calification() {
+export function Calification({ calification }: any) {
   return (
     <div className="calification">
       <div className="calification-stars">
@@ -10,7 +10,7 @@ export function Calification() {
         <img src="/icons/star.png" width="15px" />
         <img src="/icons/star.png" width="15px" />
       </div>
-      <p>(64)</p>
+      <p>({calification})</p>
     </div>
   );
 }

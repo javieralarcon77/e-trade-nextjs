@@ -1,16 +1,21 @@
 import { Calification } from "@/components/atoms/calification/calification";
 import "./card-product.css";
 
-export function CardProduct() {
+export function CardProduct({
+  name = "Nombre por defecto",
+  price,
+  priceOld,
+  discount,
+  calification,
+  image,
+  imageHover,
+}: any) {
   return (
     <article className="card-product">
       <div className="card-product-image-container">
-        <img src="/images/product-01.png" />
-        <img
-          className="card-product-image-hover"
-          src="/images/product-08.png"
-        />
-        <span className="card-product-offer">20% off</span>
+        <img src={image} />
+        <img className="card-product-image-hover" src={imageHover} />
+        {discount && <span className="card-product-offer">{discount} off</span>}
         <div className="card-product-action">
           <button>
             <img src="/icons/eye.png" width="20px" />
@@ -22,11 +27,11 @@ export function CardProduct() {
         </div>
       </div>
       <div>
-        <Calification />
-        <h5 className="card-product-name">Yanti Leather & Canvas Bags</h5>
+        {calification && <Calification calification={calification} />}
+        <h5 className="card-product-name">{name}</h5>
         <div className="card-product-price">
-          <h6>$29.99</h6>
-          <p>$49.99</p>
+          <h6>${price}</h6>
+          {priceOld && <p>${priceOld}</p>}
         </div>
       </div>
     </article>
