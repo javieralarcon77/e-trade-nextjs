@@ -1,0 +1,41 @@
+.header-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section-icon {
+  border-radius: 50%;
+  background-color: gray;
+  padding: 4px;
+  display: inline-block;
+}
+
+.header-section-icon img {
+  filter: invert();
+  width: 15px;
+}
+
+.header-section-header h2 {
+  font-weight: lighter;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.header-section-header h4 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.header-section-buttons button {
+  background-color: #f6f7fb;
+  padding: 12px 15px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.header-section-buttons img {
+  filter: invert(50%);
+}
