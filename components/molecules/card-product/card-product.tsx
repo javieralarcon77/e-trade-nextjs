@@ -1,5 +1,6 @@
 import { Calification } from "@/components/atoms/calification/calification";
 import "./card-product.css";
+import { ColorSelect } from "@/components/atoms/color-select/color-select";
 
 export function CardProduct({
   name = "Nombre por defecto",
@@ -9,6 +10,7 @@ export function CardProduct({
   calification,
   image,
   imageHover,
+  colors,
 }: any) {
   return (
     <article className="card-product">
@@ -33,6 +35,7 @@ export function CardProduct({
           <h6>${price}</h6>
           {priceOld && <p>${priceOld}</p>}
         </div>
+        {colors && <ColorSelect colors={colors} />}
       </div>
     </article>
   );

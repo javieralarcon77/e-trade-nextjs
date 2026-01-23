@@ -38,6 +38,7 @@ export function OurProducts() {
           price="49.99"
           image="/images/product-02.png"
           imageHover="/images/product-06.png"
+          colors={["#aae6f8", "#5f8af7", "#59c3c0"]}
         />
         <CardProduct
           name="Logitech Streamcam"
@@ -46,6 +47,7 @@ export function OurProducts() {
           discount="20%"
           image="/images/product-03.png"
           imageHover="/images/product-03.png"
+          colors={["#aae6f8", "#5f8af7"]}
         />
         <CardProduct
           name="3D wireless headset"
