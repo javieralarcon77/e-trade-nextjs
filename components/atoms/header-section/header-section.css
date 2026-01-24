@@ -39,3 +39,7 @@
 .header-section-buttons img {
   filter: invert(50%);
 }
+
+.profile h4 {
+  color: blue;
+}
