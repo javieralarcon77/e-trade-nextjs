@@ -11,7 +11,11 @@ export function CardTestimonial() {
         </p>
       </div>
       <div className="card-testimonial-profile">
-        <img src="/images/image-1.png" width="100px" />
+        <img
+          src="/images/image-1.png"
+          width="100px"
+          className="card-testimonial-profile-image"
+        />
         <div className="card-testimonial-profile-info">
           <h5>Head Of Idea</h5>
           <h4>James C. Anderson</h4>
