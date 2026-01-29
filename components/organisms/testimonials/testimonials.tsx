@@ -16,15 +16,34 @@ export function Testimonials() {
         icon="/icons/quotes.png"
         color="#ff497c"
       />
-      <Carousel showIndicators={false} showStatus={false} infiniteLoop={true}>
+      <Carousel
+        selectedItem={selectTestimonial}
+        infiniteLoop={true}
+        showIndicators={false}
+        showStatus={false}
+        showThumbs={false}
+        showArrows={false}
+      >
         <div>
-          <CardTestimonial />
+          <CardTestimonial
+            name="James C. Anderson"
+            profesion="Head of Idea"
+            avatar="/images/image-1.png"
+          />
         </div>
         <div>
-          <CardTestimonial />
+          <CardTestimonial
+            name="James C. Anderson"
+            profesion="Programmer"
+            avatar="/images/image-2.png"
+          />
         </div>
         <div>
-          <CardTestimonial />
+          <CardTestimonial
+            name="James C. Anderson"
+            profesion="CFO"
+            avatar="/images/image-3.png"
+          />
         </div>
       </Carousel>
     </section>

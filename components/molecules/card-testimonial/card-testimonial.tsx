@@ -1,6 +1,6 @@
 import "./card-testimonial.css";
 
-export function CardTestimonial() {
+export function CardTestimonial({ name, avatar, profesion }: any) {
   return (
     <div className="card-testimonial">
       <div className="card-testimonial-text">
@@ -12,13 +12,13 @@ export function CardTestimonial() {
       </div>
       <div className="card-testimonial-profile">
         <img
-          src="/images/image-1.png"
+          src={avatar}
           width="100px"
           className="card-testimonial-profile-image"
         />
         <div className="card-testimonial-profile-info">
-          <h5>Head Of Idea</h5>
-          <h4>James C. Anderson</h4>
+          <h5>{profesion}</h5>
+          <h4>{name}</h4>
         </div>
       </div>
     </div>
