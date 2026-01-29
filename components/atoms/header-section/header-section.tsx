@@ -1,6 +1,13 @@
 import "./header-section.css";
 
-export function HeaderSection({ title, subtitle, icon, color }: any) {
+export function HeaderSection({
+  title,
+  subtitle,
+  icon,
+  color,
+  onClickButtonRigth,
+  onClickbuttonLeft,
+}: any) {
   return (
     <header className="header-section-header">
       <div>
@@ -16,10 +23,10 @@ export function HeaderSection({ title, subtitle, icon, color }: any) {
         <h4>{subtitle}</h4>
       </div>
       <div className="header-section-buttons">
-        <button>
+        <button onClick={onClickbuttonLeft}>
           <img src="/icons/arrow-left.png" width="20px" />
         </button>
-        <button>
+        <button onClick={onClickButtonRigth}>
           <img src="/icons/arrow-right.png" width="20px" />
         </button>
       </div>
