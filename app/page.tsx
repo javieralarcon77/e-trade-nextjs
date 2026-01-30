@@ -1,3 +1,4 @@
+import { NewArrivals } from "@/components/organisms/new-arrivals/new-arrivals";
 import { OurProducts } from "@/components/organisms/our-products/our-products";
 import { Testimonials } from "@/components/organisms/testimonials/testimonials";
 
@@ -7,6 +8,7 @@ export default function Home() {
       Home
       <OurProducts />
       <Testimonials />
+      <NewArrivals />
     </div>
   );
 }

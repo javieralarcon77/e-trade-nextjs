@@ -1,0 +1,8 @@
+.new-arrivals {
+  padding: 40px;
+}
+
+.new-arrivals-list-products {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,67 @@
+.card-product-arrival {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card-product-arrival-image-circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card-product-arrival-image-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.card-product-arrival-image-container img {
+  transition: all 0.5s;
+}
+
+.card-product-arrival:hover .card-product-arrival-image-container img {
+  transform: scale(110%);
+}
+
+.card-product-arrival-offer {
+  position: absolute;
+  top: 30px;
+  right: -20px;
+  background-color: #3577f0;
+  color: white;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-product-arrival h5 {
+  font-size: 16px;
+  color: #777777;
+}
+
+.card-product-arrival-price-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.card-product-arrival-price-container h6 {
+  font-weight: 600;
+}
+
+.card-product-arrival-price-container p {
+  text-decoration: line-through;
+  font-weight: 600;
+  color: #d6d6d6;
+}
+
+.card-product-arrival .card-product-action {
+  margin: 0 auto;
+}
