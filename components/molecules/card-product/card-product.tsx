@@ -1,6 +1,7 @@
 import { Calification } from "@/components/atoms/calification/calification";
 import "./card-product.css";
 import { ColorSelect } from "@/components/atoms/color-select/color-select";
+import { CardProductAction } from "@/components/atoms/card-product-action/card-product-action";
 
 export function CardProduct({
   name = "Nombre por defecto",
@@ -18,15 +19,7 @@ export function CardProduct({
         <img src={image} />
         <img className="card-product-image-hover" src={imageHover} />
         {discount && <span className="card-product-offer">{discount} off</span>}
-        <div className="card-product-action">
-          <button>
-            <img src="/icons/eye.png" width="20px" />
-          </button>
-          <button className="card-product-add-to-cart">Add to cart</button>
-          <button>
-            <img src="/icons/heart.png" width="20px" />
-          </button>
-        </div>
+        <CardProductAction />
       </div>
       <div>
         {calification && <Calification calification={calification} />}

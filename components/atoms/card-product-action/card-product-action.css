@@ -1,0 +1,24 @@
+.card-product-action {
+  width: 100%;
+  height: 35px;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.5s;
+  display: flex;
+}
+
+.card-product-action button {
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 0 15px;
+}
+
+.card-product-action .card-product-add-to-cart {
+  color: white;
+  background-color: #ff497c;
+}
+
+.card-product-action .icon {
+  width: 20px;
+}
