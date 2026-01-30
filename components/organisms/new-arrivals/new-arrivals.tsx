@@ -1,9 +1,32 @@
-import { HeaderSection } from "@/components/atoms/header-section/header-section";
+"use client";
 
-import "./new-arrivals.css";
+import { HeaderSection } from "@/components/atoms/header-section/header-section";
 import { CardProductArrival } from "@/components/molecules/card-product-arrival/card-product-arrival";
 
+import "./new-arrivals.css";
+import { useRef } from "react";
+
 export function NewArrivals() {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const moveRigth = () => {
+    const divElement = ref.current;
+    if (divElement === null) return;
+
+    const widthChildren = divElement.children[0].clientWidth;
+    const left = divElement.scrollLeft + widthChildren * 2;
+    divElement.scrollTo({ behavior: "smooth", left: left });
+  };
+
+  const moveLeft = () => {
+    const divElement = ref.current;
+    if (divElement === null) return;
+
+    const widthChildren = divElement.children[0].clientWidth;
+    const left = divElement.scrollLeft - widthChildren * 2;
+    divElement.scrollTo({ behavior: "smooth", left: left });
+  };
+
   return (
     <section className="new-arrivals">
       <HeaderSection
@@ -11,8 +34,10 @@ export function NewArrivals() {
         subtitle="New Arrivals"
         icon="/icons/basket.png"
         color="#8c71db"
+        onClickButtonRigth={moveRigth}
+        onClickbuttonLeft={moveLeft}
       />
-      <div className="new-arrivals-list-products">
+      <div ref={ref} className="new-arrivals-list-products">
         <CardProductArrival
           name="Demon's Souls"
           price="30"

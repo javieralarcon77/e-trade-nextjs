@@ -4,5 +4,13 @@
 
 .new-arrivals-list-products {
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.new-arrivals-list-products::-webkit-scrollbar {
+  display: none;
+}
+
+.new-arrivals-list-products .card-product-arrival {
+  min-width: 50%;
 }
