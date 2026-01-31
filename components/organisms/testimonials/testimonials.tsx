@@ -24,7 +24,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="testimonials">
+    <section suppressHydrationWarning={true} className="testimonials">
       <HeaderSection
         title="Testimonials"
         subtitle="Users Feedback"
