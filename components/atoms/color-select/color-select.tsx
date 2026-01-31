@@ -19,6 +19,7 @@ export function ColorSelect({ colors }: any) {
         }
         return (
           <li
+            key={index}
             onClick={function () {
               changeActive(index);
             }}
