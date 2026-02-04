@@ -1,0 +1,25 @@
+.timer-expiriance {
+  display: flex;
+  gap: 10px;
+}
+
+.timer-expiriance-container {
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.timer-expiriance-number {
+  font-size: 20px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.timer-expiriance-text {
+  font-size: 14px;
+  color: gray;
+}

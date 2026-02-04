@@ -4,6 +4,14 @@
   align-items: center;
 }
 
+.header-section-header[data-align="center"] {
+  justify-content: center;
+}
+
+.header-section-header[data-align="center"] h2 {
+  justify-content: center;
+}
+
 .header-section-icon {
   border-radius: 50%;
   background-color: gray;

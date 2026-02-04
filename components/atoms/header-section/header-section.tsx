@@ -7,9 +7,10 @@ export function HeaderSection({
   color,
   onClickButtonRigth,
   onClickbuttonLeft,
+  align = "left",
 }: any) {
   return (
-    <header className="header-section-header">
+    <header className="header-section-header" data-align={align}>
       <div>
         <h2 style={{ color: color }}>
           <div
@@ -22,14 +23,16 @@ export function HeaderSection({
         </h2>
         <h4>{subtitle}</h4>
       </div>
-      <div className="header-section-buttons">
-        <button onClick={onClickbuttonLeft}>
-          <img src="/icons/arrow-left.png" width="20px" />
-        </button>
-        <button onClick={onClickButtonRigth}>
-          <img src="/icons/arrow-right.png" width="20px" />
-        </button>
-      </div>
+      {onClickbuttonLeft && onClickButtonRigth && (
+        <div className="header-section-buttons">
+          <button onClick={onClickbuttonLeft}>
+            <img src="/icons/arrow-left.png" width="20px" />
+          </button>
+          <button onClick={onClickButtonRigth}>
+            <img src="/icons/arrow-right.png" width="20px" />
+          </button>
+        </div>
+      )}
     </header>
   );
 }
