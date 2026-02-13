@@ -1,0 +1,46 @@
+.card-most-sold{
+    margin: 20px 0;
+    display: flex;
+    border-radius:5px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.card-most-sold > img{
+    width: 120px;
+    height: 120px;
+}
+
+.card-most-sold-body{
+    flex:1;
+    padding-left: 15px;
+}
+
+.card-most-sold-body h4{
+    font-size: 16px;
+    color: #777777;
+    margin: 10px 0;
+}
+
+.card-most-sold-body p{
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+.card-most-sold-body span{
+    color: #d6d6d6;
+    text-decoration: line-through;
+}
+
+.card-most-sold-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-most-sold-buttons button{
+padding: 10px;
+border: 1px solid #e4e4e4;
+border-radius: 5px;
+}

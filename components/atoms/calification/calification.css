@@ -18,3 +18,11 @@
   font-size: 12px;
   color: #777777;
 }
+.calification .calification-review{
+  font-size: 12px;
+}
+.calification .calification-review span{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}

@@ -1,6 +1,6 @@
 import "./calification.css";
 
-export function Calification({ calification }: any) {
+export function Calification({ calification, type = "calification" }: any) {
   return (
     <div className="calification">
       <div className="calification-stars">
@@ -10,7 +10,12 @@ export function Calification({ calification }: any) {
         <img src="/icons/star.png" width="15px" />
         <img src="/icons/star.png" width="15px" />
       </div>
-      <p>({calification})</p>
+      {type === "calification" && <p>({calification})</p>}
+      {type === "review" && (
+        <p className="calification-review">
+          <span>{calification}+</span> Reviews
+        </p>
+      )}
     </div>
   );
 }
