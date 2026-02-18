@@ -1,3 +1,4 @@
+import { Categories } from "@/components/organisms/categories/categories";
 import { DontMiss } from "@/components/organisms/dont-miss/dont-miss";
 import { MostSold } from "@/components/organisms/most-sold/most-sold";
 import { NewArrivals } from "@/components/organisms/new-arrivals/new-arrivals";
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <div style={{ paddingBottom: 1000 }}>
       Home
+      <Categories />
       <DontMiss />
       <OurProducts />
       <Testimonials />

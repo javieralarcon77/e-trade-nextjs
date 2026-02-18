@@ -1,0 +1,12 @@
+.icon-category{
+    border-radius: 5px;
+    border-width: 1px  ;
+    border-color:#c8c8cc ;
+    padding: 28px 12px;
+    width: 140px;
+    text-align: center;
+    
+}
+.icon-category img{
+    margin: 0 auto;
+}

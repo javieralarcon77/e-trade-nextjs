@@ -1,0 +1,7 @@
+.list-categories{
+    display: flex;
+    gap: 25px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
