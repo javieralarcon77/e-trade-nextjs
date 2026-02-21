@@ -1,3 +1,4 @@
+import { BannerAds } from "@/components/organisms/banner-ads/banner-ads";
 import { Categories } from "@/components/organisms/categories/categories";
 import { DontMiss } from "@/components/organisms/dont-miss/dont-miss";
 import { MostSold } from "@/components/organisms/most-sold/most-sold";
@@ -17,6 +18,7 @@ export default function Home() {
       <NewArrivals />
       <MostSold />
       <WhyUs />
+      <BannerAds />
     </div>
   );
 }

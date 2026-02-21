@@ -1,0 +1,42 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.banner img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.banner:hover img {
+  transform: scale(110%);
+}
+
+.banner:hover a {
+  color: white;
+}
+
+.banner-content {
+  position: absolute;
+  top: 0;
+
+  width: 45%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.banner-content p {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+.banner-content a {
+  transition: all 0.5s;
+  color: #676767;
+}
