@@ -4,6 +4,7 @@ import { MostSold } from "@/components/organisms/most-sold/most-sold";
 import { NewArrivals } from "@/components/organisms/new-arrivals/new-arrivals";
 import { OurProducts } from "@/components/organisms/our-products/our-products";
 import { Testimonials } from "@/components/organisms/testimonials/testimonials";
+import { WhyUs } from "@/components/organisms/why-us/why-us";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Testimonials />
       <NewArrivals />
       <MostSold />
+      <WhyUs />
     </div>
   );
 }

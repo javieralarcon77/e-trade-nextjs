@@ -1,0 +1,16 @@
+.item-why-us{
+    border-radius: 5px ;
+    border-width: 1px;
+    border-color: rgb(225, 228, 231);
+    padding: 28px 12px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bold;
+}
+.item-why-us{
+    
+}
