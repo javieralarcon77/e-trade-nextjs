@@ -1,0 +1,25 @@
+.bar-language-top {
+  margin: 0 auto;
+  width: 720px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+
+  font-size: 14px;
+  color: #5b5b5b;
+}
+
+.bar-language-top > div {
+  display: flex;
+  gap: 30px;
+}
+
+.bar-language-top button::after {
+  content: "";
+  background-image: url("/icons/chevron-down.png");
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 5px;
+}
