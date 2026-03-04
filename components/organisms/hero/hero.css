@@ -1,0 +1,12 @@
+.hero-background {
+  background-color: #f9f3f0;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.hero > div {
+  width: 50%;
+}
