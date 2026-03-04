@@ -20,7 +20,7 @@ const CATEGORIES = [
 
 export function Categories() {
   return (
-    <section>
+    <section className="categories">
       <HeaderSection
         title="Categories"
         subtitle="Browse by Category"
