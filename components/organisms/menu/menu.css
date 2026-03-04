@@ -1,0 +1,60 @@
+.menu-container {
+  margin: 0 auto;
+  padding: 0 15px 0;
+  width: 720px;
+  position: sticky;
+  top: 20px;
+  z-index: 1;
+}
+
+.menu-container menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px 20px 13px;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container menu .logo {
+  height: 35px;
+}
+
+.menu-container nav {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-container nav a {
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.menu-container nav a:hover {
+  background-color: #ff497c;
+}
+
+.menu-container nav a:hover img {
+  filter: invert();
+}
+
+.menu-container nav a img {
+  width: 17px;
+}
+
+.menu-container nav .car-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  height: 24px;
+  width: 24px;
+  font-size: 14px;
+  display: grid;
+  border: 2px solid white;
+  place-items: center;
+}
