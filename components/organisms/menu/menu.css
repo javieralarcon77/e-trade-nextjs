@@ -25,14 +25,16 @@
   gap: 10px;
 }
 
-.menu-container nav a {
+.menu-container nav a,
+.menu-container nav button {
   position: relative;
   padding: 10px;
   display: inline-block;
   border-radius: 50%;
 }
 
-.menu-container nav a:hover {
+.menu-container nav a:hover,
+.menu-container nav button:hover {
   background-color: #ff497c;
 }
 

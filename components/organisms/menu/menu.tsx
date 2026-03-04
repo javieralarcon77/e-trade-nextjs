@@ -1,6 +1,6 @@
 import "./menu.css";
 
-export function Menu() {
+export function Menu({ onOpenMenu }: any) {
   return (
     <div className="menu-container">
       <menu>
@@ -30,9 +30,9 @@ export function Menu() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <button onClick={onOpenMenu}>
               <img src="/icons/menu.png" width={20} />
-            </a>
+            </button>
           </li>
         </nav>
       </menu>

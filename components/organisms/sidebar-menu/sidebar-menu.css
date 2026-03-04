@@ -1,0 +1,33 @@
+.sidebar-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.sidebar-menu {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  float: right;
+  padding: 25px;
+}
+
+.sidebar-menu header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-menu header button {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: #efefef;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
