@@ -1,0 +1,35 @@
+.bar-top {
+  position: relative;
+  background-color: #e5c5ba;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+}
+
+.bar-top p {
+  margin: 0;
+  display: inline;
+  margin-right: 5px;
+}
+
+.bar-top a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.bar-top a:hover {
+  color: #ff497c;
+}
+
+.bar-top button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  filter: invert();
+}
+
+.bar-top button:hover {
+  filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(70deg)
+    brightness(100%);
+}
