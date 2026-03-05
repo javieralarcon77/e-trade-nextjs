@@ -1,0 +1,25 @@
+.item-sidebar {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #676767;
+}
+
+.item-sidebar-with-children > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-sidebar-childrens {
+  display: none;
+}
+
+.item-sidebar-with-children ul {
+  font-weight: 500;
+  color: black;
+  margin-left: 20px;
+}
+
+.item-sidebar-with-children li {
+  margin-top: 10px;
+}
