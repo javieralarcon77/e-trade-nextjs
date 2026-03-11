@@ -4,30 +4,13 @@ import { HeaderSection } from "@/components/atoms/header-section/header-section"
 import { CardProductArrival } from "@/components/molecules/card-product-arrival/card-product-arrival";
 
 import "./new-arrivals.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { getNewArrivals } from "@/services/products.services";
+import { useArrows } from "@/hooks/useArrows";
 
 export function NewArrivals() {
-  const ref = useRef<HTMLDivElement>(null);
+  const { ref, moveLeft, moveRigth } = useArrows({ size: 2 });
   const [arrivals, setArrivals] = useState<any[]>([]);
-
-  const moveRigth = () => {
-    const divElement = ref.current;
-    if (divElement === null) return;
-
-    const widthChildren = divElement.children[0].clientWidth;
-    const left = divElement.scrollLeft + widthChildren * 2;
-    divElement.scrollTo({ behavior: "smooth", left: left });
-  };
-
-  const moveLeft = () => {
-    const divElement = ref.current;
-    if (divElement === null) return;
-
-    const widthChildren = divElement.children[0].clientWidth;
-    const left = divElement.scrollLeft - widthChildren * 2;
-    divElement.scrollTo({ behavior: "smooth", left: left });
-  };
 
   async function loadArrivals() {
     const temp = await getNewArrivals();

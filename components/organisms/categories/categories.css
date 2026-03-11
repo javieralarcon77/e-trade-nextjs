@@ -7,5 +7,13 @@
   gap: 25px;
   margin-bottom: 60px;
   margin-top: 30px;
-  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.list-categories::-webkit-scrollbar {
+  display: none;
+}
+
+.list-categories .icon-category {
+  min-width: calc(25% - 25px);
 }

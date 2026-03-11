@@ -2,6 +2,7 @@ import "./categories.css";
 
 import { HeaderSection } from "@/components/atoms/header-section/header-section";
 import { IconCategory } from "@/components/atoms/icon-category/icon-category";
+import { useArrows } from "@/hooks/useArrows";
 
 const CATEGORIES = [
   { image: "/categories/elec-4.png", name: "phones" },
@@ -19,6 +20,8 @@ const CATEGORIES = [
 ];
 
 export function Categories() {
+  const { ref, moveRigth, moveLeft } = useArrows({ size: 4 });
+
   return (
     <section className="categories">
       <HeaderSection
@@ -26,8 +29,10 @@ export function Categories() {
         subtitle="Browse by Category"
         icon="/icons/headphones.png"
         color="#ff497c"
+        onClickButtonRigth={moveRigth}
+        onClickbuttonLeft={moveLeft}
       />
-      <div className="list-categories">
+      <div ref={ref} className="list-categories">
         {CATEGORIES.map(function (value) {
           return <IconCategory image={value.image} name={value.name} />;
         })}
