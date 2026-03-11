@@ -17,6 +17,7 @@ import { WhyUs } from "@/components/organisms/why-us/why-us";
 import { Menu } from "@/components/organisms/menu/menu";
 import { BarLanguageTop } from "@/components/molecules/bar-language-top/bar-language-top";
 import { SidebarMenu } from "@/components/organisms/sidebar-menu/sidebar-menu";
+import { Footer } from "@/components/organisms/footer/footer";
 
 export default function Home() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -48,6 +49,7 @@ export default function Home() {
         <WhyUs />
         <BannerAds />
         <Newsletter />
+        <Footer />
       </div>
     </div>
   );
