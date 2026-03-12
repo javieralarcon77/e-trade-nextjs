@@ -1,35 +1,34 @@
-.footer{
-    flex-wrap: wrap;
-    display:flex;
-    justify-content: space-between;
-    margin: 40px 70px;
+.footer {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
 }
-.footer .item{
-    width: 50%;
-    margin-bottom: 30px;
+.footer .item {
+  width: 50%;
+  margin-bottom: 30px;
 }
-.footer .item .title{
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
+.footer .item .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
-.footer .item .content{
-margin-bottom: 20px;
+.footer .item .content {
+  margin-bottom: 20px;
 }
-.footer .item p, .footer .item li{
-    color:#777777;
-    font-size: 16px;
-    margin-bottom: 5px;
+.footer .item p,
+.footer .item li {
+  color: #777777;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
-.footer .item a{
-    font-weight: 500;
+.footer .item a {
+  font-weight: 500;
 }
-.footer .item .images-container{
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
+.footer .item .images-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
-.footer .item .stores img:first-child{
-    margin-bottom: 15px;
-    
+.footer .item .stores img:first-child {
+  margin-bottom: 15px;
 }

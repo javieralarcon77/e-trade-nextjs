@@ -4,7 +4,7 @@ import { ItemFooter } from "@/components/atoms/item-footer/item-footer";
 
 export function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="item">
         <h4 className="title">Support</h4>
         <div className="content">
@@ -30,6 +30,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

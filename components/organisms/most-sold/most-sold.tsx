@@ -1,9 +1,11 @@
+import "./most-sold.css";
+
 import { HeaderSection } from "@/components/atoms/header-section/header-section";
 import { CardProductMostSold } from "@/components/molecules/card-product-most-sold/card-product-most-sold";
 
 export function MostSold() {
   return (
-    <section>
+    <section className="most-sold">
       <HeaderSection
         title="Most Sold"
         subtitle="Most Sold in eTrade Store"

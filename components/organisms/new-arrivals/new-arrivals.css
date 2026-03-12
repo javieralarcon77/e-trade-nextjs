@@ -1,5 +1,7 @@
 .new-arrivals {
-  padding: 40px 0;
+  padding: 70px 0;
+  margin-bottom: 70px;
+  border-bottom: 2px solid rgba(224, 224, 224, 0.3);
 }
 
 .new-arrivals-list-products {
