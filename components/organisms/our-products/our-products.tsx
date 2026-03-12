@@ -44,6 +44,7 @@ export function OurProducts() {
           );
         })}
       </div>
+      <button className="button-all">View All Products</button>
     </section>
   );
 }
