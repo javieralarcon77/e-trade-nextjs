@@ -19,6 +19,7 @@ import { BarLanguageTop } from "@/components/molecules/bar-language-top/bar-lang
 import { SidebarMenu } from "@/components/organisms/sidebar-menu/sidebar-menu";
 import { Footer } from "@/components/organisms/footer/footer";
 import { Services } from "@/components/organisms/services/services";
+import { BarBottom } from "@/components/molecules/bar-bottom/bar-bottom";
 
 export default function Home() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -52,6 +53,7 @@ export default function Home() {
         <Newsletter />
         <Services />
         <Footer />
+        <BarBottom />
       </div>
     </div>
   );
