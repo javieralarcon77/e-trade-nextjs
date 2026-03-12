@@ -18,6 +18,7 @@ import { Menu } from "@/components/organisms/menu/menu";
 import { BarLanguageTop } from "@/components/molecules/bar-language-top/bar-language-top";
 import { SidebarMenu } from "@/components/organisms/sidebar-menu/sidebar-menu";
 import { Footer } from "@/components/organisms/footer/footer";
+import { Services } from "@/components/organisms/services/services";
 
 export default function Home() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -49,6 +50,7 @@ export default function Home() {
         <WhyUs />
         <BannerAds />
         <Newsletter />
+        <Services />
         <Footer />
       </div>
     </div>
