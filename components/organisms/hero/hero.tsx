@@ -27,7 +27,10 @@ export function Hero() {
             icon="/icons/star.png"
           />
           <div>
-            <button>Shop Now</button>
+            <button>
+              <img src="/icons/car.png" width={20} />
+              Shop Now
+            </button>
 
             <div className="hero-reviews">
               <div className="hero-reviews-profiles">
