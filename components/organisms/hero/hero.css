@@ -10,3 +10,65 @@
 .hero > div {
   width: 50%;
 }
+
+.hero .hero-left {
+  padding-right: 30px;
+}
+
+.hero .hero-left h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero button {
+  margin: 30px 0;
+  padding: 20px 60px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hero-reviews {
+  display: flex;
+}
+
+.hero-reviews-profiles {
+  display: flex;
+}
+
+.hero-reviews-profiles img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  margin-left: -20px;
+}
+
+.hero-reviews-profiles img:first-child {
+  margin-left: 0;
+}
+
+.hero-reviews-calification {
+  margin-left: 20px;
+}
+
+.hero-reviews-calification-stars {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.hero-reviews-calification-stars img {
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(5deg)
+    brightness(100%);
+}
+
+.hero-reviews-calification p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hero-reviews-calification span {
+  font-weight: lighter;
+  color: #777777;
+}

@@ -2,6 +2,7 @@ import { HeaderSection } from "@/components/atoms/header-section/header-section"
 import "./hero.css";
 import { Carousel } from "react-responsive-carousel";
 import { useEffect, useState } from "react";
+import { Calification } from "@/components/atoms/calification/calification";
 
 const IMAGES = [
   { image: "/images/product-38.png", title: "Roco Wireless Headphone" },
@@ -16,7 +17,7 @@ export function Hero() {
   return (
     <div className="hero-background">
       <section className="hero">
-        <div>
+        <div className="hero-left">
           <HeaderSection
             title="Hot Deal In This Week"
             subtitle={IMAGES[selectImage].title}
@@ -25,6 +26,27 @@ export function Hero() {
           />
           <div>
             <button>Shop Now</button>
+
+            <div className="hero-reviews">
+              <div className="hero-reviews-profiles">
+                <img src="/images/image-1.png" width={60} />
+                <img src="/images/image-2.png" width={60} />
+                <img src="/images/image-3.png" width={60} />
+                <img src="/images/image-4.png" width={60} />
+              </div>
+              <div className="hero-reviews-calification">
+                <div className="hero-reviews-calification-stars">
+                  <img src="/icons/star.png" width="15px" />
+                  <img src="/icons/star.png" width="15px" />
+                  <img src="/icons/star.png" width="15px" />
+                  <img src="/icons/star.png" width="15px" />
+                  <img src="/icons/star-outline.png" width="15px" />
+                </div>
+                <p>
+                  100+ <span>reviews</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div>
