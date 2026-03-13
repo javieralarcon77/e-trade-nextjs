@@ -14,6 +14,8 @@ const IMAGES = [
 export function Hero() {
   const [selectImage, setSelectImage] = useState(0);
 
+  console.log({ selectImage });
+
   return (
     <div className="hero-background">
       <section className="hero">
@@ -67,6 +69,14 @@ export function Hero() {
               );
             })}
           </Carousel>
+          <div className="carrousel-indicator">
+            {IMAGES.map(function (item, index) {
+              if (index == selectImage) {
+                return <div className="active"></div>;
+              }
+              return <div></div>;
+            })}
+          </div>
         </div>
       </section>
     </div>
