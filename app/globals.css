@@ -30,3 +30,10 @@ footer {
   margin: 0 auto;
   width: 720px;
 }
+
+@media screen and (max-width: 600px) {
+  section,
+  footer {
+    width: 95%;
+  }
+}

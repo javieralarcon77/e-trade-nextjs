@@ -94,3 +94,35 @@
 .carrousel-indicator .active {
   background-color: #ff497c;
 }
+
+@media screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    height: initial;
+  }
+
+  .hero .hero-left h4 {
+    font-size: 30px;
+  }
+
+  .hero .hero-left {
+    padding-right: initial;
+  }
+
+  .hero-left > div {
+    display: grid;
+    place-content: center;
+  }
+
+  .hero > div {
+    width: 100%;
+  }
+
+  .header-section-header {
+    justify-content: center;
+  }
+
+  .header-section-header h2 {
+    justify-content: center;
+  }
+}

@@ -60,3 +60,12 @@
   border: 2px solid white;
   place-items: center;
 }
+
+@media screen and (max-width: 600px) {
+  .menu-container {
+    width: 100%;
+  }
+  .menu-container nav {
+    gap: 0;
+  }
+}

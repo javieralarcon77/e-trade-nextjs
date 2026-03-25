@@ -23,3 +23,12 @@
   display: inline-block;
   margin-left: 5px;
 }
+
+@media screen and (max-width: 600px) {
+  .bar-language-top {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    gap: 10px;
+  }
+}
