@@ -21,3 +21,10 @@
 .dont-miss button:hover {
   transform: scale(105%);
 }
+
+@media screen and (max-width: 600px) {
+  .dont-miss .header-section-header{
+    padding: 0 50px;
+    text-align: center;
+  }
+}
