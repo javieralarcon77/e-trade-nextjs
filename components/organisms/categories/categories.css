@@ -17,3 +17,9 @@
 .list-categories .icon-category {
   min-width: calc(25% - 25px);
 }
+
+@media screen and (max-width: 600px) {
+  .list-categories .icon-category {
+    min-width: calc(34% - 28px);
+  }
+}
