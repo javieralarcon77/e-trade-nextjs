@@ -8,3 +8,9 @@
   gap: 20px;
   margin-top: 50;
 }
+
+@media screen and (max-width: 600px) {
+  .why-us-items{
+    flex-direction: column;
+  }
+}
