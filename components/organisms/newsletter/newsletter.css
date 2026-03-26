@@ -27,3 +27,17 @@
     border-radius: 5px;
 
 }
+
+@media screen and (max-width: 600px) {
+    .newsletter{
+        background-position: center;
+    }
+
+    .newsletter-body{
+        display: block;
+    }
+
+    .newsletter-body button{
+        margin-top: 15px;
+    }
+}
