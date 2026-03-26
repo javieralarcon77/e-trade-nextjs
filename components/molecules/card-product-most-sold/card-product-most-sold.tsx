@@ -10,7 +10,9 @@ export function CardProductMostSold({
 }: any) {
   return (
     <div className="card-most-sold">
-      <img src={image} />
+      <div className="card-most-sold-image-container">
+        <img src={image} />
+      </div>
       <div className="card-most-sold-body">
         <Calification calification={reviews} type="review" />
 
