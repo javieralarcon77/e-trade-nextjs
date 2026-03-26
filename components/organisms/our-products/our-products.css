@@ -22,3 +22,9 @@
   color: #5a5a5a;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 600px) {
+  .our-products-products {
+    grid-template-columns: 1fr;
+  }
+}

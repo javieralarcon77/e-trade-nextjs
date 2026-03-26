@@ -21,7 +21,7 @@ export function CardProduct({
         {discount && <span className="card-product-offer">{discount} off</span>}
         <CardProductAction />
       </div>
-      <div>
+      <div className="card-product-data">
         {calification && <Calification calification={calification} />}
         <h5 className="card-product-name">{name}</h5>
         <div className="card-product-price">
