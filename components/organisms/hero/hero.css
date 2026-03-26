@@ -107,6 +107,7 @@
 
   .hero .hero-left {
     padding-right: initial;
+    margin-top: 50px;
   }
 
   .hero-left > div {
@@ -114,15 +115,37 @@
     place-content: center;
   }
 
+  .hero button{
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 14px;
+    margin: 30px auto;
+  }
+
   .hero > div {
     width: 100%;
   }
 
-  .header-section-header {
+  .hero .header-section-header {
     justify-content: center;
   }
 
-  .header-section-header h2 {
+  .hero .header-section-header h2 {
     justify-content: center;
+  }
+
+  .hero .carousel-root{
+    margin-top: 50px;
+  }
+
+  .hero .carousel .slider .slide img {
+    width: 80%;
+    height: auto;
+  }
+
+  .hero .carrousel-indicator {
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
   }
 }
