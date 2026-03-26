@@ -65,3 +65,10 @@
 .card-product-arrival .card-product-action {
   margin: 0 auto;
 }
+
+@media screen and (max-width: 600px) {
+  .card-product-arrival-image-container {
+    width: 250px;
+    height: 250px;
+  }
+}

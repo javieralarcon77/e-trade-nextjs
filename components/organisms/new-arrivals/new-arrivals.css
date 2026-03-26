@@ -16,3 +16,9 @@
 .new-arrivals-list-products .card-product-arrival {
   min-width: 50%;
 }
+
+@media screen and (max-width: 600px) {
+  .new-arrivals-list-products .card-product-arrival {
+    min-width: 100%;
+  }
+}
