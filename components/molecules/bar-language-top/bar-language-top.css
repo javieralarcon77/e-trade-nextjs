@@ -32,3 +32,10 @@
     gap: 10px;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .bar-language-top {
+    width: 100%;
+    max-width: 1320px;
+  }
+}

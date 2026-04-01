@@ -25,28 +25,28 @@
   gap: 10px;
 }
 
-.menu-container nav a,
-.menu-container nav button {
+.nav-icons a,
+.nav-icons button {
   position: relative;
   padding: 10px;
   display: inline-block;
   border-radius: 50%;
 }
 
-.menu-container nav a:hover,
-.menu-container nav button:hover {
+.nav-icons a:hover,
+.nav-icons button:hover {
   background-color: #ff497c;
 }
 
-.menu-container nav a:hover img {
+.nav-icons a:hover img {
   filter: invert();
 }
 
-.menu-container nav a img {
+.nav-icons a img {
   width: 17px;
 }
 
-.menu-container nav .car-count {
+.nav-icons .car-count {
   position: absolute;
   top: -8px;
   right: -8px;
@@ -61,11 +61,46 @@
   place-items: center;
 }
 
+.button-menu{
+  display: block;
+}
+
+.menu-container .menu-desktop{
+  display: none;
+  min-width: 45%;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.menu-container .menu-desktop li{
+  border-bottom: 2px solid transparent;
+}
+
+.menu-container .menu-desktop .active{
+  border-bottom-color: black;
+}
+
 @media screen and (max-width: 600px) {
   .menu-container {
     width: 100%;
   }
-  .menu-container nav {
+  .nav-icons {
     gap: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu-container {
+    width: 100%;
+    max-width: 1320px;
+  }
+
+  .button-menu{
+    display: none;
+  }
+
+  .menu-container .menu-desktop{
+    display: flex;
   }
 }

@@ -7,7 +7,27 @@ export function Menu({ onOpenMenu }: any) {
         <div>
           <img src="/logo.png" className="logo" height="35px" />
         </div>
-        <nav>
+        <nav className="menu-desktop">
+          <li className="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Shop</a>
+          </li>
+          <li>
+            <a href="#">Pages</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </nav>
+        <nav className="nav-icons">
           <li>
             <a href="#">
               <img src="/icons/search.png" width={20} />
@@ -29,7 +49,7 @@ export function Menu({ onOpenMenu }: any) {
               <img src="/icons/user.png" width={20} />
             </a>
           </li>
-          <li>
+          <li className="button-menu">
             <button onClick={onOpenMenu}>
               <img src="/icons/menu.png" width={20} />
             </button>

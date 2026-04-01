@@ -37,3 +37,10 @@ footer {
     width: 95%;
   }
 }
+
+@media screen and (min-width: 900px) {
+  section,
+  footer {
+    max-width: 1320px;
+  }
+}
