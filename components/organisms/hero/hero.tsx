@@ -26,7 +26,7 @@ export function Hero() {
             color="#ff497c"
             icon="/icons/star.png"
           />
-          <div>
+          <div className="hero-footer">
             <button>
               <img src="/icons/car.png" width={20} />
               Shop Now
@@ -54,7 +54,7 @@ export function Hero() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="hero-right">
           <Carousel
             infiniteLoop={true}
             showIndicators={false}

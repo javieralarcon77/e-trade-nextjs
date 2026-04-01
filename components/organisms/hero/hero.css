@@ -149,3 +149,27 @@
     margin-bottom: 60px;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .hero {
+    height: 650px;
+  }
+
+  .hero .hero-left{
+    width: 50%;
+  }
+
+  .hero .hero-left h4 {
+    font-size: 60px;
+  }
+
+  .hero .hero-right{
+    width: 40%;
+  }
+
+  .hero-footer{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
