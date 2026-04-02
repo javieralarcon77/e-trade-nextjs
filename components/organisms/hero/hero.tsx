@@ -1,8 +1,10 @@
 import { HeaderSection } from "@/components/atoms/header-section/header-section";
+import { useState } from "react";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 import "./hero.css";
-import { Carousel } from "react-responsive-carousel";
-import { useEffect, useState } from "react";
-import { Calification } from "@/components/atoms/calification/calification";
 
 const IMAGES = [
   { image: "/images/product-38.png", title: "Roco Wireless Headphone" },
@@ -56,12 +58,16 @@ export function Hero() {
         </div>
         <div className="hero-right">
           <Carousel
-            infiniteLoop={true}
-            showIndicators={false}
-            showStatus={false}
-            showThumbs={false}
-            onChange={function (index) {
-              setSelectImage(index);
+            swipeable
+            responsive={{
+              mobile: {
+                items: 1,
+                slidesToSlide: 1,
+                breakpoint: { max: 2000, min: 0 },
+              },
+            }}
+            afterChange={function (prev, state) {
+              setSelectImage(state.currentSlide);
             }}
           >
             {IMAGES.map(function (item) {

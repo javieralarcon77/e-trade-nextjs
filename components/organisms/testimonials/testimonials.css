@@ -16,3 +16,13 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .item-carrousel-testimonials{
+        padding: 10px;
+  }
+
+  .item-carrousel-testimonials.different{
+    margin-top: 50px;
+  }
+}
