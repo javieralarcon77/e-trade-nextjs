@@ -28,3 +28,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .our-products-products {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
