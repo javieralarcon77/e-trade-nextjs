@@ -8,6 +8,12 @@
   border-radius: 5px;
 }
 
+.dont-miss-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .dont-miss button {
   background-color: #3577f0;
   color: white;
@@ -26,5 +32,38 @@
   .dont-miss .header-section-header{
     padding: 0 50px;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .dont-miss {
+    flex-direction: row;    
+    justify-content: space-between;
+    padding: 60px;
+    margin-top: 200px;
+  }
+
+  .dont-miss .poster {
+    width: 40%;
+    margin-top: -150px;
+    margin-right: 100px;
+  }
+
+  .dont-miss .header-section-header, .dont-miss .header-section-header h2{
+    justify-content: flex-start;
+  }
+  .dont-miss .header-section-header h4{
+    font-size: 55px;
+    font-weight: bold;
+    padding-right: 20%;
+  }
+
+  .dont-miss button {
+    padding: 20px 60px;
+    font-size: 20px;
+  }
+
+  .dont-miss-info{
+    display: block;
   }
 }
