@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .why-us-items{
+  .why-us-items {
     flex-direction: column;
   }
 }

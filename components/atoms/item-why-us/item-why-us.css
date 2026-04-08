@@ -20,3 +20,9 @@
     aspect-ratio: initial;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .item-why-us {
+    width: calc(20% - 20px);
+  }
+}
