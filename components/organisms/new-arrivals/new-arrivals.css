@@ -22,3 +22,9 @@
     min-width: 100%;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .new-arrivals-list-products .card-product-arrival {
+    min-width: 25%;
+  }
+}
