@@ -3,3 +3,11 @@
   margin-bottom: 70px;
   border-bottom: 2px solid rgba(224, 224, 224, 0.3);
 }
+
+@media screen and (min-width: 900px) {
+  .most-sold-list-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

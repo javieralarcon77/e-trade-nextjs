@@ -1,76 +1,82 @@
-.card-most-sold{
-    margin: 20px 0;
-    display: flex;
-    border-radius:5px;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1); 
+.card-most-sold {
+  margin: 20px 0;
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.card-most-sold-image-container img{
-    width: 120px;
-    height: 120px;
+.card-most-sold-image-container img {
+  width: 120px;
+  height: 120px;
 }
 
-.card-most-sold-body{
-    flex:1;
-    padding-left: 15px;
+.card-most-sold-body {
+  flex: 1;
+  padding-left: 15px;
 }
 
-.card-most-sold-body h4{
-    font-size: 16px;
-    color: #777777;
-    margin: 10px 0;
+.card-most-sold-body h4 {
+  font-size: 16px;
+  color: #777777;
+  margin: 10px 0;
 }
 
-.card-most-sold-body p{
-    font-size: 20px;
-    font-weight: 600px;
+.card-most-sold-body p {
+  font-size: 20px;
+  font-weight: 600px;
 }
 
-.card-most-sold-body span{
-    color: #d6d6d6;
-    text-decoration: line-through;
+.card-most-sold-body span {
+  color: #d6d6d6;
+  text-decoration: line-through;
 }
 
-.card-most-sold-buttons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+.card-most-sold-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
-.card-most-sold-buttons button{
-    padding: 10px;
-    border: 1px solid #e4e4e4;
-    border-radius: 5px;
+.card-most-sold-buttons button {
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 600px) {
-    .card-most-sold{
-        flex-direction: column;
-    }
+  .card-most-sold {
+    flex-direction: column;
+  }
 
-    .card-most-sold-image-container{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background-color: #f6f7fb;
-        border-radius: 10px;
-    }
+  .card-most-sold-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f7fb;
+    border-radius: 10px;
+  }
 
-    .card-most-sold-body{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 15px;
-    }
+  .card-most-sold-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+  }
 
-    .card-most-sold-buttons{
-        margin-top: 25px;
-        flex-direction: row;
-    }
+  .card-most-sold-buttons {
+    margin-top: 25px;
+    flex-direction: row;
+  }
 
-    .card-most-sold-buttons button img{
-        width: 15px;
-    }
+  .card-most-sold-buttons button img {
+    width: 15px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card-most-sold {
+    width: calc(50% - 10px);
+  }
 }
