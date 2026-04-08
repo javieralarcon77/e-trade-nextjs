@@ -6,3 +6,9 @@
 
   gap: 20px;
 }
+
+@media screen and (min-width: 900px) {
+  .banner-ads {
+    flex-direction: row;
+  }
+}
