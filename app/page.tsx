@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 import { BarTop } from "@/components/molecules/bar-top/bar-top";
 import { BannerAds } from "@/components/organisms/banner-ads/banner-ads";
 
@@ -20,19 +18,10 @@ import { SidebarMenu } from "@/components/organisms/sidebar-menu/sidebar-menu";
 import { Footer } from "@/components/organisms/footer/footer";
 import { Services } from "@/components/organisms/services/services";
 import { BarBottom } from "@/components/molecules/bar-bottom/bar-bottom";
+import { useSidebar } from "@/hooks/useSidebar";
 
 export default function Home() {
-  const [openSidebar, setOpenSidebar] = useState(false);
-
-  function onOpenMenu() {
-    console.log("click desde el menu");
-    setOpenSidebar(true);
-  }
-
-  function onCloseMenu() {
-    console.log("click desde el sidebar");
-    setOpenSidebar(false);
-  }
+  const { openSidebar, onOpenMenu, onCloseMenu } = useSidebar();
 
   return (
     <div style={{ backgroundColor: "#f9f3f0" }}>
