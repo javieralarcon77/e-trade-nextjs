@@ -1,0 +1,37 @@
+.title-page {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.title-page-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.title-page-left ul {
+  display: flex;
+}
+
+.title-page-left li {
+  color: #999;
+  margin-left: 5px;
+  padding-left: 5px;
+  border-left: 1px solid #999;
+}
+
+.title-page-left li:last-child {
+  color: #3577f0;
+}
+
+.title-page-left li:first-child {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.title-page-left h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
