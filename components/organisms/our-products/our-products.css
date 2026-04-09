@@ -2,35 +2,3 @@
   padding: 40px 0;
   margin-bottom: 30px;
 }
-
-.our-products-products {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
-}
-
-.our-products .button-all {
-  width: 250px;
-  padding: 15px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  background-color: #f6f7fb;
-  font-weight: 600;
-  border-radius: 5px;
-  color: #5a5a5a;
-  margin-top: 30px;
-}
-
-@media screen and (max-width: 600px) {
-  .our-products-products {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .our-products-products {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
