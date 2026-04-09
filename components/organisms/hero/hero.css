@@ -20,7 +20,7 @@
   font-weight: bold;
 }
 
-.hero button {
+.hero .btn {
   margin: 30px 0;
   padding: 20px 40px;
   background-color: white;
@@ -115,7 +115,7 @@
     place-content: center;
   }
 
-  .hero button{
+  .hero .btn {
     width: fit-content;
     padding: 12px 24px;
     font-size: 14px;
@@ -134,7 +134,7 @@
     justify-content: center;
   }
 
-  .hero .carousel-root{
+  .hero .carousel-root {
     margin-top: 50px;
   }
 
@@ -155,7 +155,7 @@
     height: 650px;
   }
 
-  .hero .hero-left{
+  .hero .hero-left {
     width: 50%;
   }
 
@@ -163,11 +163,11 @@
     font-size: 60px;
   }
 
-  .hero .hero-right{
+  .hero .hero-right {
     width: 40%;
   }
 
-  .hero-footer{
+  .hero-footer {
     display: flex;
     align-items: center;
     gap: 40px;

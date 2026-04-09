@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./menu.css";
 
 export function Menu({ onOpenMenu }: any) {
@@ -9,10 +10,10 @@ export function Menu({ onOpenMenu }: any) {
         </div>
         <nav className="menu-desktop">
           <li className="active">
-            <a href="#">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="#">Shop</a>
+            <Link href="/shop">Shop</Link>
           </li>
           <li>
             <a href="#">Pages</a>

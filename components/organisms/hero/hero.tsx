@@ -29,10 +29,10 @@ export function Hero() {
             icon="/icons/star.png"
           />
           <div className="hero-footer">
-            <button>
+            <a className="btn" href="/shop">
               <img src="/icons/car.png" width={20} />
               Shop Now
-            </button>
+            </a>
 
             <div className="hero-reviews">
               <div className="hero-reviews-profiles">
