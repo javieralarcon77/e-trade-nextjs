@@ -31,9 +31,9 @@ export default function ShopPage() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: "#f9f3f0" }}>
-      <BarLanguageTop />
-      <Menu onOpenMenu={onOpenMenu} />
+    <div>
+      <BarLanguageTop isHome={false} />
+      <Menu onOpenMenu={onOpenMenu} isHome={false} />
       {openSidebar && <SidebarMenu onCloseMenu={onCloseMenu} />}
       <div style={{ backgroundColor: "white" }}>
         <BarOffer />
