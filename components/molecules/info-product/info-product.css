@@ -1,0 +1,17 @@
+.info-product ul {
+  display: flex;
+  gap: 30px;
+
+  margin-bottom: 40px;
+}
+
+.info-product li {
+  font-size: 20px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.info-product li.active {
+  color: #3577f0;
+  border-bottom: 3px solid #3577f0;
+}

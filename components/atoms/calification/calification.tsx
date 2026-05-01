@@ -16,6 +16,9 @@ export function Calification({ calification, type = "calification" }: any) {
           <span>{calification}+</span> Reviews
         </p>
       )}
+      {type === "customer" && (
+        <p className="calification-review">({calification} customer reviews)</p>
+      )}
     </div>
   );
 }

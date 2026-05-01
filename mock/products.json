@@ -7,7 +7,9 @@
       "discount": "20%",
       "calification": 64,
       "image": "/images/product-01.png",
-      "imageHover": "/images/product-08.png"
+      "imageHover": "/images/product-08.png",
+      "colors": ["#aae6f8", "#5f8af7", "#59c3c0"],
+      "sizes": ["XS", "S", "M", "L", "XL"]
     },
     {
       "name": "Level 20 RGB Cherry",

@@ -10,6 +10,7 @@ export function ListProducts({ products }: { products: any[] }) {
           return (
             <CardProduct
               key={index}
+              id={index}
               name={value.name}
               price={value.price}
               priceOld={value.priceOld}

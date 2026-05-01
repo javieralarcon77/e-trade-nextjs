@@ -1,0 +1,14 @@
+.size-select {
+  display: flex;
+  gap: 10px;
+}
+
+.size-select div {
+  border-radius: 50%;
+  border: 1px solid rgb(205, 205, 205);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  color: gray;
+}
