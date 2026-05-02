@@ -13,6 +13,7 @@ import { BarOffer } from "@/components/molecules/bar-offer/bar-offer";
 import { useEffect, useState } from "react";
 import { getProducts } from "@/services/products.services";
 import { DetailProduct } from "@/components/organisms/detail-product/detail-product";
+import { ProductRecently } from "@/components/organisms/product-recently/product-recently";
 
 export default function ProductPage() {
   const { openSidebar, onOpenMenu, onCloseMenu } = useSidebar();
@@ -36,6 +37,7 @@ export default function ProductPage() {
       <div style={{ backgroundColor: "white" }}>
         <BarOffer />
         {product && <DetailProduct product={product} />}
+        <ProductRecently />
         <Newsletter />
         <Services />
         <Footer />

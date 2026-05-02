@@ -1,0 +1,29 @@
+.product-recently {
+  padding: 70px 0;
+}
+
+.product-recently-list-products {
+  display: flex;
+  overflow-x: auto;
+}
+
+.product-recently-list-products::-webkit-scrollbar {
+  display: none;
+}
+
+.product-recently-list-products > a {
+  min-width: 50%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .product-recently-list-products > a {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .product-recently-list-products > a {
+    min-width: 25%;
+  }
+}
