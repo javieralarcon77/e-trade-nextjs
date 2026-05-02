@@ -7,7 +7,9 @@ export function Menu({ onOpenMenu, isHome = true }: any) {
       <div className="menu-container">
         <menu>
           <div>
-            <img src="/logo.png" className="logo" height="35px" />
+            <Link href="/">
+              <img src="/logo.png" className="logo" height="35px" />
+            </Link>
           </div>
           <nav className="menu-desktop">
             <li className="active">
