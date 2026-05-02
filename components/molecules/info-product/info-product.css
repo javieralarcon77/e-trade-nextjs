@@ -1,3 +1,8 @@
+.info-product-bg {
+  background-color: #f9f3f0;
+  padding: 80px 0;
+}
+
 .info-product ul {
   display: flex;
   gap: 30px;
@@ -14,4 +19,85 @@
 .info-product li.active {
   color: #3577f0;
   border-bottom: 3px solid #3577f0;
+}
+
+.info-product-description h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.info-product-description p {
+  color: gray;
+}
+
+.info-product-description ul {
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.info-product-description span {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.info-product-description img {
+  width: 30px;
+  height: 30px;
+}
+
+.info-product-aditional {
+  padding: 30px;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info-product-aditional td {
+  width: 50%;
+  padding: 20px 10px;
+}
+
+.info-product-aditional td:last-child {
+  color: gray;
+}
+
+.info-product-aditional tr:nth-child(2n + 1) {
+  background-color: #f6f7fb;
+}
+
+.info-product-reviews h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info-product-reviews > div {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.info-products-reviews-img {
+  width: 70px;
+  height: 70px;
+}
+
+.info-product-reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.info-product-reviews-header h5 {
+  font-size: 18px;
+}
+
+.info-product-reviews p {
+  color: gray;
 }
