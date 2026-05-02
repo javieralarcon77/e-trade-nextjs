@@ -1,14 +1,25 @@
 import "./calification.css";
 
-export function Calification({ calification, type = "calification" }: any) {
+const STARS = ["x", "x", "x", "x", "x"];
+
+export function Calification({
+  calification,
+  numActive = 5,
+  type = "calification",
+}: any) {
   return (
     <div className="calification">
       <div className="calification-stars">
-        <img src="/icons/star.png" width="15px" />
-        <img src="/icons/star.png" width="15px" />
-        <img src="/icons/star.png" width="15px" />
-        <img src="/icons/star.png" width="15px" />
-        <img src="/icons/star.png" width="15px" />
+        {STARS.map(function (item, index) {
+          var classStar = "";
+          if (index < numActive) {
+            classStar = "calification-stars-active";
+          }
+
+          return (
+            <img src="/icons/star.png" className={classStar} width="15px" />
+          );
+        })}
       </div>
       {type === "calification" && <p>({calification})</p>}
       {type === "review" && (
