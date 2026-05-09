@@ -14,11 +14,34 @@
   font-size: 20px;
   padding-bottom: 2px;
   cursor: pointer;
+  position: relative;
+}
+
+.info-product li::after {
+  content: "";
+  background-color: #3577f0;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.5s;
+}
+
+.info-product li:hover {
+  color: #3577f0;
+}
+
+.info-product li:hover::after {
+  width: 100%;
 }
 
 .info-product li.active {
   color: #3577f0;
-  border-bottom: 3px solid #3577f0;
+}
+
+.info-product li.active::after {
+  width: 100%;
 }
 
 .info-product-description h3 {

@@ -11,4 +11,9 @@
   display: grid;
   place-content: center;
   color: gray;
+  cursor: pointer;
+}
+
+.size-select div:hover {
+  border: 2px solid rgb(136, 136, 136);
 }
