@@ -2,14 +2,16 @@ import { ColorSelect } from "@/components/atoms/color-select/color-select";
 import "./card-product-arrival.css";
 import { CardProductAction } from "@/components/atoms/card-product-action/card-product-action";
 
-export function CardProductArrival({
-  name = "Nombre por defecto",
-  price,
-  priceOld,
-  discount,
-  image,
-  colors,
-}: any) {
+export function CardProductArrival(product: any) {
+  const {
+    name = "Nombre por defecto",
+    price,
+    priceOld,
+    discount,
+    image,
+    colors,
+  } = product;
+
   return (
     <div className="card-product-arrival">
       <div className="card-product-arrival-image-container">
@@ -26,7 +28,7 @@ export function CardProductArrival({
         <p>${priceOld}</p>
         <h6>${price}</h6>
       </div>
-      <CardProductAction />
+      <CardProductAction product={product} />
     </div>
   );
 }

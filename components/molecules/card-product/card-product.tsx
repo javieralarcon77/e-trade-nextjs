@@ -5,17 +5,19 @@ import { CardProductAction } from "@/components/atoms/card-product-action/card-p
 import Link from "next/link";
 import { TagOffer } from "@/components/atoms/tag-offer/tag-offer";
 
-export function CardProduct({
-  id,
-  name = "Nombre por defecto",
-  price,
-  priceOld,
-  discount,
-  calification,
-  image,
-  imageHover,
-  colors,
-}: any) {
+export function CardProduct(product: any) {
+  const {
+    id,
+    name = "Nombre por defecto",
+    price,
+    priceOld,
+    discount,
+    calification,
+    image,
+    imageHover,
+    colors,
+  } = product;
+
   return (
     <Link href={"/product/" + id}>
       <article className="card-product">
@@ -23,7 +25,7 @@ export function CardProduct({
           <img src={image} />
           <img className="card-product-image-hover" src={imageHover} />
           <TagOffer discount={discount} />
-          <CardProductAction />
+          <CardProductAction product={product} />
         </div>
         <div className="card-product-data">
           {calification && <Calification calification={calification} />}

@@ -1,7 +1,11 @@
 import Link from "next/link";
 import "./menu.css";
+import { useContext } from "react";
+import { StoreContext } from "@/context/store.context";
 
 export function Menu({ onOpenMenu, isHome = true }: any) {
+  const { cantProducts } = useContext(StoreContext);
+
   return (
     <div className="menu-container-bg" data-home={isHome}>
       <div className="menu-container">
@@ -44,7 +48,9 @@ export function Menu({ onOpenMenu, isHome = true }: any) {
             </li>
             <li>
               <a href="#">
-                <span className="car-count">3</span>
+                {cantProducts != 0 && (
+                  <span className="car-count">{cantProducts}</span>
+                )}
                 <img src="/icons/car.png" width={20} />
               </a>
             </li>

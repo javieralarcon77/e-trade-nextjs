@@ -1,6 +1,7 @@
 import { CardProduct } from "@/components/molecules/card-product/card-product";
 
 import "./list-products.css";
+import Link from "next/link";
 
 export function ListProducts({ products }: { products: any[] }) {
   return (
@@ -23,7 +24,9 @@ export function ListProducts({ products }: { products: any[] }) {
           );
         })}
       </div>
-      <button className="button-all">View All Products</button>
+      <Link href="/shop" className="button-all">
+        View All Products
+      </Link>
     </div>
   );
 }
