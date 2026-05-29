@@ -87,6 +87,12 @@
   gap: 10px;
 }
 
+.modal-car-product-price span {
+  margin-left: 5px;
+  color: #d6d6d6;
+  text-decoration: line-through;
+}
+
 .modal-car-product-action {
   gap: 20px;
   display: flex;

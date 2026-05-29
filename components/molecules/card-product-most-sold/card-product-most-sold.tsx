@@ -4,7 +4,7 @@ import { useContext, useMemo } from "react";
 import { StoreContext } from "@/context/store.context";
 
 export function CardProductMostSold(product: any) {
-  const { image, name, price, oldPrice, reviews } = product;
+  const { image, name, price, priceOld, reviews } = product;
 
   const { car, addProduct, removeProduct } = useContext(StoreContext);
 
@@ -38,7 +38,7 @@ export function CardProductMostSold(product: any) {
 
         <h4>{name}</h4>
         <p>
-          {price} <span>{oldPrice}</span>{" "}
+          ${price} {priceOld && <span>${priceOld}</span>}
         </p>
       </div>
       <div className="card-most-sold-buttons">

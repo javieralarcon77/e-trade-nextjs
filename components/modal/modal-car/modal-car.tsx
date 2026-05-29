@@ -18,7 +18,10 @@ function ProductCar({ product, moreProduct, minusProduct }: any) {
       </div>
       <div className="modal-car-product-info">
         <h5>{product.name}</h5>
-        <p>${product.price}</p>
+        <p className="modal-car-product-price">
+          ${product.price}
+          {product.priceOld && <span>${product.priceOld}</span>}
+        </p>
       </div>
       <div className="modal-car-product-action">
         <button onClick={handleMinusProduct}>-</button>
@@ -31,6 +34,8 @@ function ProductCar({ product, moreProduct, minusProduct }: any) {
 
 export function ModalCar({ onCloseCar }: any) {
   const { car, moreProduct, minusProduct } = useContext(StoreContext);
+
+  console.log({ car });
 
   const total = useMemo(() => {
     const temp = car.reduce(function (acc: number, product: any) {
