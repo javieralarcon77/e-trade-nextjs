@@ -32,6 +32,43 @@ export function StoreContextComponent({ children }: any) {
     });
   }
 
+  function moreProduct(product: any) {
+    const name = product.name;
+    setCar(function (prev: any) {
+      // console.log({ prev });
+      const indexProduct = prev.findIndex(function (item: any) {
+        return item.name == name;
+      });
+
+      const tempCount = prev[indexProduct].count;
+      // console.log({ tempCount });
+
+      prev[indexProduct].count = tempCount + 1;
+
+      return [...prev];
+    });
+  }
+
+  function minusProduct(product: any) {
+    const name = product.name;
+    setCar(function (prev: any) {
+      // console.log({ prev });
+      const indexProduct = prev.findIndex(function (item: any) {
+        return item.name == name;
+      });
+
+      const tempCount = prev[indexProduct].count;
+
+      if (tempCount == 1) {
+        prev.splice(indexProduct, 1);
+        return [...prev];
+      }
+
+      prev[indexProduct].count = tempCount - 1;
+      return [...prev];
+    });
+  }
+
   return (
     <StoreContext.Provider
       value={{
@@ -41,6 +78,8 @@ export function StoreContextComponent({ children }: any) {
         setCantProducts,
         addProduct,
         removeProduct,
+        moreProduct,
+        minusProduct,
       }}
     >
       {children}

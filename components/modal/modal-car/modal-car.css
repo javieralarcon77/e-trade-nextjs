@@ -1,0 +1,106 @@
+.modal-car-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-car {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  padding: 50px;
+}
+
+.modal-car-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal-car-close {
+  border-radius: 50%;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.modal-car-list-product {
+  max-height: 75vh;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal-car-footer {
+  border-top: 1px solid #cccccc;
+}
+
+.modal-car-footer div:first-child {
+  padding: 20px 0;
+}
+
+.modal-car-footer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-car-footer p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.modal-car-btn {
+  width: 48%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #3577f0;
+  border-radius: 10px;
+}
+
+.modal-car-btn-checkout {
+  background-color: #ff497c;
+}
+
+.modal-car-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-car-product-info {
+  flex: 1;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-car-product-action {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-car-product-action button {
+  border-radius: 50%;
+  background-color: #eeeeee;
+  width: 25px;
+  height: 25px;
+}
+
+.modal-car-product-action button:hover {
+  background-color: #3577f0;
+  color: white;
+}
